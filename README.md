@@ -140,30 +140,35 @@ Compile .mo files:
 
 Run manually:
 
+```bash
     python3 -m net_ctrl_pc.server
-
+```
 Or enable and start via systemd:
 
+```bash
     sudo systemctl enable --now net-ctrl-pc-server
-
+```
 ### Client
 
 Run manually:
 
+```bash
     python3 -m net_ctrl_pc.client
-
+```
 Or enable and start via systemd:
 
+```bash
     sudo systemctl enable --now net-ctrl-pc-client
-
+```
 ---
 
 ## MQTT Command Testing
 
 Send a command:
 
+```bash
     mosquitto_pub -t "net-ctrl-pc/pc001/commands" -m '{"cmd": "poweroff"}'
-
+```
 Expected responses:
 
 - received
