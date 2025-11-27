@@ -42,22 +42,30 @@ Full localization support is implemented using gettext.
 
 1. Clone the repository
 
+```bash
     git clone https://github.com/yourname/net-ctrl-pc.git
     cd net-ctrl-pc
+```
 
 2. Install the Python package
 
+```bash
     sudo python3 setup.py install
+```
 
 3. Create configuration directory and copy config files
 
+```bash
     sudo mkdir -p /etc/net-ctrl-pc  
     sudo cp configs/*.yaml /etc/net-ctrl-pc/
+```
 
 4. Install systemd service files and reload daemon
 
+```bash
     sudo cp systemd/*.service /usr/lib/systemd/system/
     sudo systemctl daemon-reload
+```
 
 ---
 
@@ -65,6 +73,7 @@ Full localization support is implemented using gettext.
 
 ### Server configuration (/etc/net-ctrl-pc/server.yaml)
 
+```yaml
 mqtt:
   host: "mqtt.local"
   port: 1883
@@ -103,7 +112,7 @@ commands:
   custom_script:
     action: "shell"
     cmd: "/usr/local/bin/test.sh"
-
+```
 ---
 
 ## Localization
@@ -116,7 +125,7 @@ Generate .pot file:
 
 Update .po files:
 
-    msgmerge -U locale/uk/LC_MESSAGES/net-ctrl-pc-client.po locale/net-ctrl-pc-client.pot  
+    msgmerge -U locale/uk/LC_MESSAGES/net-ctrl-pc-client.po locale/net-ctrl-pc-client.pot
     msgmerge -U locale/uk/LC_MESSAGES/net-ctrl-pc-server.po locale/net-ctrl-pc-server.pot
 
 Compile .mo files:
