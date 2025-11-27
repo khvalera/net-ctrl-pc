@@ -1,0 +1,74 @@
+# ===============================
+#  net-ctrl-pc : SERVER CONFIG
+# ===============================
+
+mqtt:
+  host: "192.168.1.100"
+  port: 1883
+  base_topic: "net-ctrl-pc"
+  username: "deye"
+  password: "Passw"
+
+logging:
+  file: /var/log/net-ctrl-pc/server.log
+  level: INFO
+  # size or "time"
+  rotation: size
+  # 10MB
+  max_bytes: 10485760
+  backup_count: 5
+  # if rotation = "time"
+  when: midnight
+  # number of intervals (1 day)
+  interval: 1
+
+# delay in seconds before sending main commands to clients
+main_command_delay: 30
+
+clients:
+  - id: "pc01"
+    # execution waiting timeout (sec)
+    exec_timeout: 15
+
+  - id: "pc02"
+    # pc01 is the main server for pc02
+    main: "pc01"
+    exec_timeout: 12
+
+  - id: "pc03"
+    main: "main-server"
+    exec_timeout: 12
+
+  - id: "main-server"
+    exec_timeout: 6
+
+auto_rules:
+  - name: "poweroff_at_70"
+    enabled: true
+    trigger:
+      topic: "deye/battery/soc"
+      condition:
+        type: numeric_less_equal
+        value: 70
+        range: 2
+    action:
+      command: "poweroff"
+      # how many times to send the command to each client in the list
+      retries: 1
+      clients:
+        - "pc02"
+        - "pc03"
+
+  - name: "poweroff_at_60"
+    enabled: true
+    trigger:
+      topic: "deye/battery/soc"
+      condition:
+        type: numeric_less_equal
+        value: 60
+        range: 2
+    action:
+      command: "poweroff"
+      retries: 5
+      clients:
+        - "main-server"

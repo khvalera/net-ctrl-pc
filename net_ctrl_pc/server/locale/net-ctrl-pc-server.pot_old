@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the net-ctrl-pc-server package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: net-ctrl-pc-server\n"
+"Report-Msgid-Bugs-To: khvalera@ukr.net\n"
+"POT-Creation-Date: 2025-11-27 13:51+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: server/command_handler.py:15
+#, python-brace-format
+msgid ""
+"Running auto_rule '{name}' with command '{command}' on clients: {clients}"
+msgstr ""
+
+#: server/command_handler.py:24
+#, python-brace-format
+msgid "Client config for '{client_id}' not found, skipping"
+msgstr ""
+
+#: server/command_handler.py:40
+#, python-brace-format
+msgid ""
+"Command '{command}' failed on sub-client '{client_id}'. Aborting main client "
+"execution."
+msgstr ""
+
+#: server/command_handler.py:46
+#, python-brace-format
+msgid "Waiting {delay} seconds before sending commands to main clients..."
+msgstr ""
+
+#: server/command_handler.py:52
+#, python-brace-format
+msgid "Main client config '{main_client_id}' not found, skipping"
+msgstr ""
+
+#: server/command_handler.py:74
+#, python-brace-format
+msgid "Sending command '{command}' to {client_id}, attempt {attempt}/{retries}"
+msgstr ""
+
+#: server/command_handler.py:79
+#, python-brace-format
+msgid "Failed to publish command to {cmd_topic}, rc={rc}"
+msgstr ""
+
+#: server/command_handler.py:83
+#, python-brace-format
+msgid "Published command to {cmd_topic}"
+msgstr ""
+
+#: server/command_handler.py:86
+#, python-brace-format
+msgid "[{client_id}] No ACK received, retrying..."
+msgstr ""
+
+#: server/command_handler.py:90
+#, python-brace-format
+msgid "[{client_id}] No execution start ACK received, retrying..."
+msgstr ""
+
+#: server/command_handler.py:93
+#, python-brace-format
+msgid "[{client_id}] Command '{command}' executed successfully"
+msgstr ""
+
+#: server/command_handler.py:98
+#, python-brace-format
+msgid ""
+"[{client_id}] Failed to execute command '{command}' after {retries} retries"
+msgstr ""
+
+#: server/command_handler.py:113
+#, python-brace-format
+msgid "Error parsing ACK message JSON: {error}"
+msgstr ""
+
+#: server/command_handler.py:122
+#, python-brace-format
+msgid "[{client_id}] ACK received for command '{cmd}'"
+msgstr ""
+
+#: server/command_handler.py:125
+#, python-brace-format
+msgid "[{client_id}] Command '{cmd}' execution started"
+msgstr ""
+
+#: server/command_handler.py:131
+#, python-brace-format
+msgid "Cannot convert payload '{payload}' to float"
+msgstr ""
+
+#: server/command_handler.py:146
+#, python-brace-format
+msgid ""
+"Checking condition: val={val}, type={val_type}, value={value}, "
+"range={range_val}"
+msgstr ""
+
+#: server/command_handler.py:152
+#, python-brace-format
+msgid "Unsupported condition type: {val_type}"
+msgstr ""
+
+#: server/command_handler.py:154
+#, python-brace-format
+msgid "Condition range: {val_min} <= {val} <= {val_max}"
+msgstr ""
+
+#: server/command_handler.py:155
+#, python-brace-format
+msgid "Condition result: {cond_result}"
+msgstr ""
+
+#: server/command_handler.py:158
+#, python-brace-format
+msgid "Condition matched! Running auto_rule '{rule_name}'"
+msgstr ""
+
+#: server/mqtt_client.py:24
+msgid "MQTT loop started in background thread"
+msgstr ""
+
+#: server/mqtt_client.py:28
+msgid "Connected to MQTT broker"
+msgstr ""
+
+#: server/mqtt_client.py:36
+#, python-brace-format
+msgid "Subscribed to trigger topic: {topic}"
+msgstr ""
+
+#: server/mqtt_client.py:41
+#, python-brace-format
+msgid "Subscribed to ack topic: {ack_topic}"
+msgstr ""
+
+#: server/mqtt_client.py:43
+#, python-brace-format
+msgid "Failed to connect to MQTT broker, rc={rc}"
+msgstr ""
+
+#: server/mqtt_client.py:48
+#, python-brace-format
+msgid "Message received on topic {topic}: {payload}"
+msgstr ""
+
+#: server/main.py:35
+msgid "Shutting down..."
+msgstr ""
+
+#: server/logger_setup.py:25
+#, python-brace-format
+msgid "Failed to create log directory: {error}"
+msgstr ""
+
+#: server/logger_setup.py:29
+#, python-brace-format
+msgid ""
+"Logging with size-based rotation: maxBytes={max_bytes}, "
+"backupCount={backup_count}"
+msgstr ""
+
+#: server/logger_setup.py:33
+#, python-brace-format
+msgid ""
+"Logging with time-based rotation: when={when}, interval={interval}, backup "
+"count={backup_count}"
+msgstr ""
+
+#: server/logger_setup.py:43
+#, python-brace-format
+msgid "Logger initialized. Log file: {log_file}, Level: {level}"
+msgstr ""

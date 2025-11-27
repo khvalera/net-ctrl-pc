@@ -1,0 +1,15 @@
+[Unit]
+Description=Net Control PC - Server
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/usr/lib/python3.12/site-packages/net_ctrl_pc
+ExecStart=/usr/bin/python3 -m net_ctrl_pc.server
+Restart=on-failure
+RestartSec=5s
+User=netctrl
+Group=netctrl
+
+[Install]
+WantedBy=multi-user.target

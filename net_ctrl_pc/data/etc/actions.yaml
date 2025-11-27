@@ -1,0 +1,7 @@
+actions:
+  poweroff:
+    cmd: "poweroff"
+    system_cmd: "sudo poweroff"
+  reboot:
+    cmd: "reboot"
+    system_cmd: "sudo reboot"

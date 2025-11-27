@@ -1,0 +1,192 @@
+# Ukrainian translations for net-ctrl-pc-server package
+# Переклад українською для пакету net-ctrl-pc-server.
+# Copyright (C) 2025 THE net-ctrl-pc-server'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the net-ctrl-pc-server package.
+# Automatically generated, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: net-ctrl-pc-server\n"
+"Report-Msgid-Bugs-To: khvalera@ukr.net\n"
+"POT-Creation-Date: 2025-11-27 15:48+0200\n"
+"PO-Revision-Date: 2025-11-27 13:53+0200\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: server/command_handler.py:15
+#, python-brace-format
+msgid ""
+"Running auto_rule '{name}' with command '{command}' on clients: {clients}"
+msgstr ""
+"Запуск auto_rule '{name}' з командою '{command}' на клієнтах: {clients}"
+
+#: server/command_handler.py:25
+#, python-brace-format
+msgid "Client config for '{client_id}' not found, skipping"
+msgstr "Конфігурацію клієнта для '{client_id}' не знайдено, пропускається"
+
+#: server/command_handler.py:48
+#, python-brace-format
+msgid "Waiting {delay} seconds before sending commands to main clients..."
+msgstr ""
+"Очікування {delay} секунд перед надсиланням команд основним клієнтам..."
+
+#: server/command_handler.py:55
+#, python-brace-format
+msgid "Main client config '{main_client_id}' not found, skipping"
+msgstr ""
+"Конфігурацію основного клієнта '{main_client_id}' не знайдено, пропускається"
+
+#: server/command_handler.py:81
+#, python-brace-format
+msgid "Sending command '{command}' to {client_id}, attempt {attempt}/{retries}"
+msgstr ""
+"Надсилання команди '{command}' до {client_id}, спроба {attempt}/{retries}"
+
+#: server/command_handler.py:86
+#, python-brace-format
+msgid "Failed to publish command to {cmd_topic}, rc={rc}"
+msgstr "Не вдалося опублікувати команду в {cmd_topic}, rc={rc}"
+
+#: server/command_handler.py:90
+#, python-brace-format
+msgid "Published command to {cmd_topic}"
+msgstr "Опубліковано команду в {cmd_topic}"
+
+#: server/command_handler.py:93
+#, python-brace-format
+msgid "[{client_id}] No ACK received, retrying..."
+msgstr "[{client_id}] Підтвердження не отримано, повторна спроба..."
+
+#: server/command_handler.py:97
+#, python-brace-format
+msgid "[{client_id}] No execution start ACK received, retrying..."
+msgstr ""
+"[{client_id}] Підтвердження початку виконання не отримано, повторна спроба..."
+
+#: server/command_handler.py:100
+#, python-brace-format
+msgid "[{client_id}] Command '{command}' executed successfully"
+msgstr "[{client_id}] Команду '{command}' успішно виконано"
+
+#: server/command_handler.py:106
+#, python-brace-format
+msgid ""
+"[{client_id}] Failed to execute command '{command}' after {retries} retries"
+msgstr ""
+"[{client_id}] Не вдалося виконати команду '{command}' після {retries} спроб"
+
+#: server/command_handler.py:121
+#, python-brace-format
+msgid "Error parsing ACK message JSON: {error}"
+msgstr "Помилка розбору JSON-повідомлення ACK: {error}"
+
+#: server/command_handler.py:130
+#, python-brace-format
+msgid "[{client_id}] ACK received for command '{cmd}'"
+msgstr "[{client_id}] Отримано підтвердження для команди '{cmd}'"
+
+#: server/command_handler.py:133
+#, python-brace-format
+msgid "[{client_id}] Command '{cmd}' execution started"
+msgstr "[{client_id}] Розпочато виконання команди '{cmd}'"
+
+#: server/command_handler.py:139
+#, python-brace-format
+msgid "Cannot convert payload '{payload}' to float"
+msgstr "Неможливо перетворити значення '{payload}' на число"
+
+#: server/command_handler.py:154
+#, python-brace-format
+msgid ""
+"Checking condition: val={val}, type={val_type}, value={value}, "
+"range={range_val}"
+msgstr ""
+"Умова перевірки: val={val}, тип={val_type}, значення={value}, "
+"діапазон={range_val}"
+
+#: server/command_handler.py:160
+#, python-brace-format
+msgid "Unsupported condition type: {val_type}"
+msgstr "Непідтримуваний тип умови: {val_type}"
+
+#: server/command_handler.py:162
+#, python-brace-format
+msgid "Condition range: {val_min} <= {val} <= {val_max}"
+msgstr "Діапазон умов: {val_min} <= {val} <= {val_max}"
+
+#: server/command_handler.py:163
+#, python-brace-format
+msgid "Condition result: {cond_result}"
+msgstr "Результат умови: {cond_result}"
+
+#: server/command_handler.py:166
+#, python-brace-format
+msgid "Condition matched! Running auto_rule '{rule_name}'"
+msgstr "Умова збігається! Виконується auto_rule '{rule_name}'"
+
+#: server/mqtt_client.py:24
+msgid "MQTT loop started in background thread"
+msgstr "Цикл MQTT запущено у фоновому потоці"
+
+#: server/mqtt_client.py:28
+msgid "Connected to MQTT broker"
+msgstr "Підключено до брокера MQTT"
+
+#: server/mqtt_client.py:36
+#, python-brace-format
+msgid "Subscribed to trigger topic: {topic}"
+msgstr "Підписано на тему-тригер: {topic}"
+
+#: server/mqtt_client.py:41
+#, python-brace-format
+msgid "Subscribed to ack topic: {ack_topic}"
+msgstr "Підписано на тему ack: {ack_topic}"
+
+#: server/mqtt_client.py:43
+#, python-brace-format
+msgid "Failed to connect to MQTT broker, rc={rc}"
+msgstr "Не вдалося підключитися до брокера MQTT, rc={rc}"
+
+#: server/mqtt_client.py:48
+#, python-brace-format
+msgid "Message received on topic {topic}: {payload}"
+msgstr "Отримано повідомлення на тему {topic}: {payload}"
+
+#: server/main.py:35
+msgid "Shutting down..."
+msgstr "Вимикання..."
+
+#: server/logger_setup.py:25
+#, python-brace-format
+msgid "Failed to create log directory: {error}"
+msgstr "Не вдалося створити каталог журналів: {error}"
+
+#: server/logger_setup.py:29
+#, python-brace-format
+msgid ""
+"Logging with size-based rotation: maxBytes={max_bytes}, backup "
+"count={backup_count}"
+msgstr ""
+"Ведення журналу з ротацією на основі розміру: макс. кількість "
+"байтів={max_bytes}, кількість копій={backup_count}"
+
+#: server/logger_setup.py:33
+#, python-brace-format
+msgid ""
+"Logging with time-based rotation: when={when}, interval={interval}, backup "
+"count={backup_count}"
+msgstr ""
+"Ведення журналу з ротацією на основі часу: коли={when}, интервал={interval}, "
+"кількість копій={backup_count}"
+
+#: server/logger_setup.py:43
+#, python-brace-format
+msgid "Logger initialized. Log file: {log_file}, Level: {level}"
+msgstr "Ініціалізовано логгер. Файл журналу: {log_file}, рівень: {level}"

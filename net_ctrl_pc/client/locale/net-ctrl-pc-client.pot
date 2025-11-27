@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the net-ctrl-pc-client package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: net-ctrl-pc-client\n"
+"Report-Msgid-Bugs-To: khvalera@ukr.net\n"
+"POT-Creation-Date: 2025-11-27 22:25+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: client.py:33
+msgid "Connected to MQTT broker"
+msgstr ""
+
+#: client.py:36
+#, python-brace-format
+msgid "Subscribed to topic {topic}"
+msgstr ""
+
+#: client.py:38
+#, python-brace-format
+msgid "Failed to connect to MQTT broker, rc={rc}"
+msgstr ""
+
+#: client.py:46
+msgid "Received message without 'cmd' field"
+msgstr ""
+
+#: client.py:50 actions.py:13
+#, python-brace-format
+msgid "Unknown command '{cmd}' received, ignoring"
+msgstr ""
+
+#: client.py:53 actions.py:16
+#, python-brace-format
+msgid "Received command '{cmd}'"
+msgstr ""
+
+#: client.py:59 actions.py:20
+msgid "Sent status 'received'"
+msgstr ""
+
+#: client.py:66 actions.py:28
+msgid "Sent status 'executing'"
+msgstr ""
+
+#: client.py:73 actions.py:34
+#, python-brace-format
+msgid "No system command configured for '{cmd}'"
+msgstr ""
+
+#: client.py:76
+#, python-brace-format
+msgid "Error processing message: {error}"
+msgstr ""
+
+#: main.py:10
+#, python-brace-format
+msgid "Failed to load config: {error}"
+msgstr ""
+
+#: main.py:29
+#, python-brace-format
+msgid "Failed to connect to MQTT broker: {error}"
+msgstr ""
+
+#: config.py:14
+#, python-brace-format
+msgid "Config file not found: {path}"
+msgstr ""
+
+#: config.py:16
+#, python-brace-format
+msgid "Error loading config {path}: {error}"
+msgstr ""
+
+#: mqtt_handler.py:7
+msgid "Client connected to broker"
+msgstr ""
+
+#: mqtt_handler.py:12
+#, python-brace-format
+msgid "Failed to connect, rc={rc}"
+msgstr ""
+
+#: mqtt_handler.py:19
+msgid "No 'cmd' in payload"
+msgstr ""
+
+#: mqtt_handler.py:25
+#, python-brace-format
+msgid "Error in on_message: {error}"
+msgstr ""
+
+#: actions.py:6
+#, python-brace-format
+msgid "Executing system command: {cmd}"
+msgstr ""
+
+#: actions.py:9
+#, python-brace-format
+msgid "Failed to execute system command '{cmd}': {error}"
+msgstr ""
