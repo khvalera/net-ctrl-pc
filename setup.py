@@ -1,13 +1,3 @@
-import os
-
-def find_mo_files():
-    mo_files = []
-    for root, dirs, files in os.walk("net_ctrl_pc/locale"):
-        for file in files:
-            if file.endswith(".mo"):
-                filepath = os.path.relpath(os.path.join(root, file), "net_ctrl_pc")
-                mo_files.append(filepath)
-    return mo_files
 
 from setuptools import setup, find_packages
 
@@ -30,7 +20,8 @@ setup(
         ],
     },
     package_data={
-        'net_ctrl_pc': find_mo_files(),
+        "net_ctrl_pc": [ "locale/**/*.*",],
+        'net_ctrl_pc': ['data/*.yaml'],
     },
     include_package_data=True,
     classifiers=[
