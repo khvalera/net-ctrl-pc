@@ -5,7 +5,6 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-WorkingDirectory=/usr/lib/python3.12/site-packages/net_ctrl_pc
 ExecStart=/usr/bin/python3 -m net_ctrl_pc.client
 Restart=on-failure
 RestartSec=5s
