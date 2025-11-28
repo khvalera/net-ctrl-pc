@@ -11,5 +11,9 @@ RestartSec=5s
 User=netctrl
 Group=netctrl
 
+PermissionsStartOnly=true
+WorkingDirectory=/var/lib/netctrl
+ReadWritePaths=/var/log/net-ctrl-pc
+
 [Install]
 WantedBy=multi-user.target

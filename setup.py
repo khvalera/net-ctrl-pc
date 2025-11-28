@@ -22,7 +22,8 @@ setup(
     #    ],
     #},
     package_data={
-        "net_ctrl_pc": [ "locale/**/*.*",],
+        "net_ctrl_pc": [ "locale/**/*.mo",],
+        "net_ctrl_pc": [ "locale/**/*.po",],
         'net_ctrl_pc': ['data/*.yaml'],
     },
     include_package_data=True,
