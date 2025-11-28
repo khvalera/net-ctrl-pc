@@ -79,48 +79,8 @@ Full localization support is implemented using gettext.
 
 ## Configuration
 
-### Server configuration (/etc/net-ctrl-pc/server.yaml)
+Examples of configuration files actions.yaml, client.yml, server.yaml, they need to be adjusted to your needs
 
-```yaml
-mqtt:
-  host: "mqtt.local"
-  port: 1883
-  username: "server"
-  password: "1234"
-  base_topic: "net-ctrl-pc"
-
-logging:
-  file: "/var/log/net-ctrl-pc-server.log"
-  level: "INFO"
-
-### Client configuration (/etc/net-ctrl-pc/client.yaml)
-
-mqtt:
-  host: "mqtt.local"
-  port: 1883
-  username: "client"
-  password: "clientpass"
-  base_topic: "net-ctrl-pc"
-
-client:
-  id: "pc001"
-  exec_timeout: 1
-
-### Commands configuration (/etc/net-ctrl-pc/commands.yaml)
-
-commands:
-  poweroff:
-    action: "shell"
-    cmd: "systemctl poweroff"
-
-  reboot:
-    action: "shell"
-    cmd: "systemctl reboot"
-
-  custom_script:
-    action: "shell"
-    cmd: "/usr/local/bin/test.sh"
-```
 ---
 
 ## Localization
