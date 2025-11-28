@@ -18,6 +18,3 @@ mv client/locale/uk/LC_MESSAGES/net-ctrl-pc-client.po client/locale/uk/LC_MESSAG
 msginit --locale=en_US.UTF-8 --no-translator --input=locale/net-ctrl-pc-client.pot --output-file=locale/en/LC_MESSAGES/net-ctrl-pc-client.po
 msginit --locale=uk_UA.UTF-8 --no-translator --input=locale/net-ctrl-pc-client.pot --output-file=locale/uk/LC_MESSAGES/net-ctrl-pc-client.po
 
-# update
-#msgmerge --update locale/en/LC_MESSAGES/net-ctrl-pc-client.po locale/net-ctrl-pc-client.pot
-#msgmerge --update locale/uk/LC_MESSAGES/net-ctrl-pc-client.po locale/net-ctrl-pc-client.pot

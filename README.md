@@ -129,20 +129,11 @@ commands:
 
 ## Localization
 
-To create or update translation templates (.pot) and translation files (.po):
+To create or update translation templates (.pot) and translation files (.po), use the localization scripts located in:
 
-Generate .pot file:
-
-    xgettext --language=Python --keyword=_ --package-name=net-ctrl-pc --output=locale/net-ctrl-pc.pot $(find . -name "*.py")
-
-Update .po files:
-
-    msgmerge -U locale/uk/LC_MESSAGES/net-ctrl-pc-client.po locale/net-ctrl-pc-client.pot
-    msgmerge -U locale/uk/LC_MESSAGES/net-ctrl-pc-server.po locale/net-ctrl-pc-server.pot
-
-Compile .mo files:
-
-    ./scripts/update-mo.sh
+```bash
+net_ctrl_pc/data/scripts/
+```
 
 ---
 
