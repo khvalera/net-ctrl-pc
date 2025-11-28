@@ -57,13 +57,9 @@ Full localization support is implemented using gettext.
 
 ```bash
    sudo useradd -r -s /usr/bin/nologin -d /var/lib/netctrl -c "net-ctrl-pc user" netctrl
-   sudo mkdir -p /var/lib/netctrl
-   sudo mkdir -p /var/log/net-ctrl-pc
 
-   sudo chown -R netctrl:netctrl /var/lib/netctrl
-   sudo chown -R netctrl:netctrl /var/log/net-ctrl-pc
-   sudo chmod 750 /var/lib/netctrl
-   sudo chmod 750 /var/log/net-ctrl-pc
+   sudo install -d -m 750 -o netctrl -g netctrl /var/log/net-ctrl-pc
+   sudo install -d -m 750 -o netctrl -g netctrl /var/lib/net-ctrl-pc
 ```
 4. Create configuration directory and copy config files
 

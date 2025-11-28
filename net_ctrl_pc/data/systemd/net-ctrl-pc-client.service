@@ -12,7 +12,7 @@ User=netctrl
 Group=netctrl
 
 PermissionsStartOnly=true
-WorkingDirectory=/var/lib/netctrl
+WorkingDirectory=/var/lib/net-ctrl-pc
 ReadWritePaths=/var/log/net-ctrl-pc
 
 [Install]

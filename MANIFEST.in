@@ -1,4 +1,6 @@
-recursive-include net_ctrl_pc/server/locale *
-recursive-include net_ctrl_pc/client/locale *
+recursive-include net_ctrl_pc/server/locale *.mo
+recursive-include net_ctrl_pc/server/locale *.po
+recursive-include net_ctrl_pc/client/locale *.mo
+recursive-include net_ctrl_pc/client/locale *po
 recursive-include net_ctrl_pc/server *.yaml
 recursive-include net_ctrl_pc/client *.yaml
