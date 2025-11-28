@@ -10,15 +10,17 @@ setup(
     url="https://github.com/khvalera/net-ctrl-pc",
     packages=find_packages(),
     install_requires=[
+        "importlib_resources==5.10.1",
+        "zipp<3.0",
         "paho-mqtt>=1.5.0,<2.0",
         "PyYAML>=5.4",
     ],
-    entry_points={
-        "console_scripts": [
-            "ncp-server = net_ctrl_pc.server.main:main",
-            "ncp-client = net_ctrl_pc.client.main:main",
-        ],
-    },
+    #entry_points={
+    #    "console_scripts": [
+    #        "ncp-server = net_ctrl_pc.server.main:main",
+    #        "ncp-client = net_ctrl_pc.client.main:main",
+    #    ],
+    #},
     package_data={
         "net_ctrl_pc": [ "locale/**/*.*",],
         'net_ctrl_pc': ['data/*.yaml'],
