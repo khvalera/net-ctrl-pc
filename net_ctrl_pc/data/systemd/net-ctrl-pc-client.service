@@ -5,6 +5,7 @@ Wants=network.target
 
 [Service]
 Type=simple
+ExecStartPre=/usr/bin/sleep 5
 ExecStart=/usr/bin/python3 -m net_ctrl_pc.client
 Restart=on-failure
 RestartSec=5s
